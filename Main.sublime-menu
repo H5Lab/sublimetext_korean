@@ -1,0 +1,114 @@
+[
+    {
+        "caption": "파일(F)","mnemonic": "F",
+        "id": "file"
+    },
+    {
+        "caption": "편집(E)","mnemonic": "E",
+        "id": "edit",
+        "children":[
+            {
+                "caption": "Line", "caption": "행작업(L)", "mnemonic": "L",
+                "id": "line"
+            },
+            {
+                "caption": "댓글(m)", "mnemonic": "m",
+                "id": "comment"
+            },
+            {
+                "caption": "텍스트(T)", "mnemonic": "T",
+                "id": "text"
+            },
+            {
+                "caption": "XML태그",
+                "id": "tag"
+            },
+            {
+                "caption": "마크",
+                "id": "mark"
+            },
+            {
+                "caption": "코드 축소",
+                "id": "fold"
+            },
+            {
+                "caption": "대소문자 변환(a)", "mnemonic": "a",
+                "id": "convert_case"
+            },
+            {
+                "caption": "줄바꿈",
+                "id": "wrap"
+            }
+        ]
+    },
+    {
+        "caption": "선택(S)","mnemonic": "S",
+        "id": "selection"
+    },
+    {
+        "caption": "검색(i)","mnemonic": "i",
+        "id": "find"
+    },
+    {
+        "caption": "표시(V)","mnemonic": "V",
+        "id": "view",
+        "children":
+        [
+            {
+                "caption": "사이드바",
+                "id": "side_bar"
+            },
+            {
+                "caption": "화면분할(L)","mnemonic": "L",
+                "id": "layout"
+            },
+            {
+                "caption": "구문(S)","mnemonic": "S",
+                "id": "syntax"
+            },
+            {
+                "caption": "들여쓰기(I)","mnemonic": "I",
+                "id": "indentation"
+            },
+            {
+                "caption": "줄바꿈코드(n)","mnemonic": "n",
+                "id": "line_endings"
+            }
+        ]
+    },
+    {
+        "caption": "이동(G)","mnemonic": "G",
+        "id": "goto",
+        "children":
+        [
+            {
+                "caption": "파일이동(t)","mnemonic": "t",
+                "id": "switch_file"
+            },
+            {
+                "caption": "스크롤(S)","mnemonic": "S",
+                "id": "scroll"
+            },
+            {
+                "caption": "책갈피(b)","mnemonic": "b",
+                "id": "bookmarks"
+            }
+        ]
+    },
+    {
+        "caption": "도구(T)","mnemonic": "T",
+        "id": "tools"
+    },
+    {
+        "caption": "프로젝트(P)","mnemonic": "P",
+        "id": "project"
+    },
+    {
+        "caption": "기본설정(n)","mnemonic": "n",
+        "id": "preferences"
+    },
+    {
+        "caption": "도움말(H)","mnemonic": "H",
+        "id": "help"
+    }
+]
