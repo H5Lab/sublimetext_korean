@@ -28,5 +28,15 @@ Sublime Text3의 한국어 플러그인입니다.
 
 [Mac OS X 설치 방법]
 
-준비중...
+1. Finder의 [이동]-[폴더로 이동]을 실행하고 "~/Library(라이브러리)"를 입력하고 [이동]버튼을 실행합니다.
+
+
+2. "/Library/Application Support/Sublime Text 3/Packages/"까지 이동하고 Default 폴더가 없으면 만들니다.
+
+
+3.  *.kr파일들을 모두 Default폴더로 복사해 넣고 kr확장자만 삭제합니다.
+
+
+4. User에는 kr확장자가 없었던 Main.sublime-menu파일을 복사해 넣습니다. 
+
 
