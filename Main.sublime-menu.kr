@@ -207,7 +207,7 @@
                 "children":
                 [
                     { "command": "종료태그 삽입" },
-                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "태그블룩 선택" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "태그블록 선택" },
                     { "command": "insert_snippet", "args": { "name": "res://Packages/XML/long-tag.sublime-snippet" }, "caption": "선택영역을 새 태그로 랩핑" }
                 ]
             },
@@ -468,40 +468,40 @@
                 "caption": "분할화면 선택(F)",
                 "children":
                 [
-                    { "command": "new_pane", "caption": "Move File to New Group" },
-                    { "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
-                    { "command": "close_pane", "caption": "Close Group" },
+                    { "command": "new_pane", "caption": "새그룹으로 파일이동" },
+                    { "command": "new_pane", "args": {"move": false}, "caption": "새 그룹" },
+                    { "command": "close_pane", "caption": "그룹 닫기" },
 
 
                     { "caption": "-" },
 
 
                     {
-                        "caption": "Max Columns: 1",
+                        "caption": "최대 컬럼: 1",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 1 }
                     },
                     {
-                        "caption": "Max Columns: 2",
+                        "caption": "최대 컬럼: 2",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 2 }
                     },
                     {
-                        "caption": "Max Columns: 3",
+                        "caption": "최대 컬럼: 3",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 3 }
                     },
                     {
-                        "caption": "Max Columns: 4",
+                        "caption": "최대 컬럼: 4",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 4 }
                     },
                     {
-                        "caption": "Max Columns: 5",
+                        "caption": "최대 컬럼: 5",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 5 }
@@ -626,13 +626,13 @@
             { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "이동[일반](A)…", "mnemonic": "A" },
             { "caption": "-" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "이동[기호]…" },
-            { "command": "goto_symbol_in_project", "caption": "Goto Symbol in Project…" },
-            { "command": "goto_definition", "caption": "Goto Definition…" },
-            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
+            { "command": "goto_symbol_in_project", "caption": "프로젝트의 Goto기호…" },
+            { "command": "goto_definition", "caption": "Goto 정의…" },
+            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto 단어…" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "이동[행번호]…" },
             { "caption": "-" },
-            { "command": "jump_back", "caption": "Jump Back" },
-            { "command": "jump_forward", "caption": "Jump Forward" },
+            { "command": "jump_back", "caption": "상위 이동" },
+            { "command": "jump_forward", "caption": "앞으로 이동" },
             { "caption": "-" },
             {
                 "caption": "파일이동(t)",
@@ -770,8 +770,8 @@
         "children":
         [
             { "command": "prompt_open_project", "caption": "프로젝트 열기(O)…", "mnemonic": "O" },
-            { "command": "prompt_switch_project_or_workspace", "caption": "Switch Project…" },
-            { "command": "prompt_select_workspace", "caption": "Quick Switch Project…", "mnemonic": "S" },
+            { "command": "prompt_switch_project_or_workspace", "caption": "프로젝트 전환…" },
+            { "command": "prompt_select_workspace", "caption": "빠른 프로젝트 전환…", "mnemonic": "S" },
             {
                 "caption": "최근 열었던 프로젝트(R)",
                 "mnemonic": "R",
@@ -791,11 +791,11 @@
             },
             { "caption": "-" },
             { "command": "save_project_as", "caption": "다른 이름으로 프로젝트저장(A)…", "mnemonic": "A" },
-            { "command": "close_workspace", "caption": "Close Project", "mnemonic": "C" },
-            { "command": "open_file", "args": {"file": "${project}"}, "caption": "プロジェクト設定" },
+            { "command": "close_workspace", "caption": "프로젝트 닫기", "mnemonic": "C" },
+            { "command": "open_file", "args": {"file": "${project}"}, "caption": "프로젝트 설정" },
             { "caption": "-" },
-            { "command": "new_window_for_project", "caption": "New Workspace for Project" },
-            { "command": "save_workspace_as", "caption": "Save Workspace As…", "mnemonic": "A" },
+            { "command": "new_window_for_project", "caption": "프로젝트를 위한 새 워크스페이스" },
+            { "command": "save_workspace_as", "caption": "다른 워크스페이스로 저장…", "mnemonic": "A" },
             { "caption": "-" },
             { "command": "prompt_add_folder", "caption": "프로젝트에 폴더추가(d)…", "mnemonic": "d" },
             { "command": "close_folder_list", "caption": "프로젝트의 모든 폴더삭제(m)", "mnemonic": "m" },
