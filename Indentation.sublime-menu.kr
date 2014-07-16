@@ -1,0 +1,17 @@
+[
+{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "들여쓰기 여백 사용", "checkbox": true },
+     { "caption": "-" },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "탭너비: 1", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "탭너비: 2", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "탭너비: 3", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "탭너비: 4", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "탭너비: 5", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "탭너비: 6", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "탭너비: 7", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "탭너비: 8", "checkbox": true },
+     { "caption": "-" },
+     { "command": "detect_indentation", "caption": "사용중인 파일 확인" },
+     { "caption": "-" },
+     { "command": "expand_tabs", "caption": "들여쓰기 공백으로 변환", "args": {"set_translate_tabs": true} },
+     { "command": "unexpand_tabs", "caption": "들여쓰기 탭으로 변환", "args": {"set_translate_tabs": true} }
+ ]
