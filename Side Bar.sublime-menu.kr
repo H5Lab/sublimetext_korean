@@ -1,0 +1,11 @@
+[
+	{ "caption": "새로 만들기", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "이름변경…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "삭제", "command": "delete_file", "args": {"files": []} },
+	{ "caption": "파일이 있는 폴더 열기…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "새 폴더…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "삭제", "command": "delete_folder", "args": {"dirs": []} },
+	{ "caption": "검색…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]
