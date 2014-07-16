@@ -1,0 +1,887 @@
+[
+    {
+        "caption": "파일(F)",
+        "mnemonic": "F",
+        "id": "file",
+        "children":
+        [
+            { "command": "new_file", "caption": "새로만들기(N)", "mnemonic": "N" },
+
+
+            { "command": "prompt_open_file", "caption": "열기(O)…", "mnemonic": "O", "platform": "!OSX" },
+            { "command": "prompt_open_folder", "caption": "폴더 열기…", "platform": "!OSX" },
+            { "command": "prompt_open", "caption": "열기…", "platform": "OSX" },
+            {
+                "caption": "최근 파일 열기(R)…",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "reopen_last_file", "caption": "마지막 사용한 파일 열기" },
+                    { "caption": "-" },
+                    { "command": "open_recent_file", "args": {"index": 0 } },
+                    { "command": "open_recent_file", "args": {"index": 1 } },
+                    { "command": "open_recent_file", "args": {"index": 2 } },
+                    { "command": "open_recent_file", "args": {"index": 3 } },
+                    { "command": "open_recent_file", "args": {"index": 4 } },
+                    { "command": "open_recent_file", "args": {"index": 5 } },
+                    { "command": "open_recent_file", "args": {"index": 6 } },
+                    { "command": "open_recent_file", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "open_recent_folder", "args": {"index": 0 } },
+                    { "command": "open_recent_folder", "args": {"index": 1 } },
+                    { "command": "open_recent_folder", "args": {"index": 2 } },
+                    { "command": "open_recent_folder", "args": {"index": 3 } },
+                    { "command": "open_recent_folder", "args": {"index": 4 } },
+                    { "command": "open_recent_folder", "args": {"index": 5 } },
+                    { "command": "open_recent_folder", "args": {"index": 6 } },
+                    { "command": "open_recent_folder", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "clear_recent_files", "caption": "지우기" }
+                ]
+            },
+            {
+                "caption": "인코딩을 사용하여 다시열기",
+                "children":
+                [
+                    { "caption": "UTF-8", "command": "reopen", "args": {"encoding": "utf-8" } },
+                    { "caption": "UTF-16 LE", "command": "reopen", "args": {"encoding": "utf-16 le" } },
+                    { "caption": "UTF-16 BE", "command": "reopen", "args": {"encoding": "utf-16 be" } },
+                    { "caption": "-" },
+                    { "caption": "Western (Windows 1252)", "command": "reopen", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "Western (ISO 8859-1)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "Western (ISO 8859-3)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "Western (ISO 8859-15)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "Western (Mac Roman)", "command": "reopen", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "DOS (CP 437)", "command": "reopen", "args": {"encoding": "DOS (CP 437)" } },
+                    { "caption": "Arabic (Windows 1256)", "command": "reopen", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "Arabic (ISO 8859-6)", "command": "reopen", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "Baltic (Windows 1257)", "command": "reopen", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "Baltic (ISO 8859-4)", "command": "reopen", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "Celtic (ISO 8859-14)", "command": "reopen", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "Central European (Windows 1250)", "command": "reopen", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "Central European (ISO 8859-2)", "command": "reopen", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "Estonian (ISO 8859-13)", "command": "reopen", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "Greek (Windows 1253)", "command": "reopen", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "Greek (ISO 8859-7)", "command": "reopen", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "Hebrew (Windows 1255)", "command": "reopen", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "Hebrew (ISO 8859-8)", "command": "reopen", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "Nordic (ISO 8859-10)", "command": "reopen", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "Romanian (ISO 8859-16)", "command": "reopen", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "Turkish (Windows 1254)", "command": "reopen", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "Turkish (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "Vietnamese (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "-" },
+                    { "caption": "Hexadecimal", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
+                ]
+            },
+            { "command": "clone_file", "caption": "탭복사(e)", "mnemonic": "e" },
+            { "command": "save", "caption": "저장(S)", "mnemonic": "S" },
+            {
+                "caption": "인코딩을 지정하고 저장",
+                "children":
+                [
+                    { "caption": "UTF-8", "command": "save", "args": {"encoding": "utf-8" } },
+                    { "caption": "UTF-8 with BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
+                    { "caption": "UTF-16 LE", "command": "save", "args": {"encoding": "utf-16 le" } },
+                    { "caption": "UTF-16 LE with BOM", "command": "save", "args": {"encoding": "utf-16 le with bom" } },
+                    { "caption": "UTF-16 BE", "command": "save", "args": {"encoding": "utf-16 be" } },
+                    { "caption": "UTF-16 BE with BOM", "command": "save", "args": {"encoding": "utf-16 be with bom" } },
+                    { "caption": "-" },
+                    { "caption": "Western (Windows 1252)", "command": "save", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "Western (ISO 8859-1)", "command": "save", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "Western (ISO 8859-3)", "command": "save", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "Western (ISO 8859-15)", "command": "save", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "Western (Mac Roman)", "command": "save", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "DOS (CP 437)", "command": "save", "args": {"encoding": "DOS (CP 437)" } },
+                    { "caption": "Arabic (Windows 1256)", "command": "save", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "Arabic (ISO 8859-6)", "command": "save", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "Baltic (Windows 1257)", "command": "save", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "Baltic (ISO 8859-4)", "command": "save", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "Celtic (ISO 8859-14)", "command": "save", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "Central European (Windows 1250)", "command": "save", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "Central European (ISO 8859-2)", "command": "save", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "Cyrillic (Windows 1251)", "command": "save", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "Cyrillic (Windows 866)", "command": "save", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "Cyrillic (KOI8-R)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "Cyrillic (KOI8-U)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "Estonian (ISO 8859-13)", "command": "save", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "Greek (Windows 1253)", "command": "save", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "Greek (ISO 8859-7)", "command": "save", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "Hebrew (Windows 1255)", "command": "save", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "Hebrew (ISO 8859-8)", "command": "save", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "Nordic (ISO 8859-10)", "command": "save", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "Romanian (ISO 8859-16)", "command": "save", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "Turkish (Windows 1254)", "command": "save", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "Turkish (ISO 8859-9)", "command": "save", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "Vietnamese (Windows 1258)", "command": "save", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "-" },
+                    { "caption": "Hexadecimal", "command": "save", "args": {"encoding": "Hexadecimal" } }
+                ]
+            },
+            { "command": "prompt_save_as", "caption": "다른 이름으로 저장(A)…", "mnemonic": "A" },
+            { "command": "save_all", "caption": "모두 저장(l)", "mnemonic": "l" },
+            { "caption": "-", "id": "window" },
+            { "command": "new_window", "caption": "새 창(W)", "mnemonic": "W" },
+            { "command": "close_window", "caption": "창 닫기" },
+            { "caption": "-", "id": "close" },
+            { "command": "close", "caption": "파일 닫기(C)", "mnemonic": "C" },
+            { "command": "revert", "caption": "마지막 저장상태 복원(v)", "mnemonic": "v" },
+            { "command": "close_all", "caption": "모든 파일 닫기" },
+            { "caption": "-", "id": "exit" },
+            { "command": "exit", "caption": "종료(x)", "mnemonic": "x" }
+        ]
+    },
+    {
+        "caption": "편집(E)",
+        "mnemonic": "E",
+        "id": "edit",
+        "children":
+        [
+            { "command": "undo", "mnemonic": "U", "caption": "실행취소(U)" },
+            { "command": "redo_or_repeat", "mnemonic": "R", "caption": "다시실행(R)"  },
+            {
+                "caption": "선택작업 실행취소",
+                "children":
+                [
+                    { "command": "soft_undo", "caption": "선택작업 실행취소"  },
+                    { "command": "soft_redo", "caption": "선택작업 다시실행"  }
+                ]
+            },
+            { "caption": "-", "id": "clipboard" },
+            { "command": "copy", "caption": "복사하기(C)", "mnemonic": "C" },
+            { "command": "cut", "caption": "잘라내기(n)", "mnemonic": "n" },
+            { "command": "paste", "caption": "붙여넣기(P)", "mnemonic": "P" },
+            { "command": "paste_and_indent", "caption": "붙여넣기와 들여쓰기(I)", "mnemonic": "I" },
+            { "command": "paste_from_history", "caption": "내역에서 붙여넣기" },
+            { "caption": "-" },
+            {
+                "caption": "Line", "caption": "행작업(L)", "mnemonic": "L",
+                "id": "line",
+                "children":
+                [
+                    { "command": "indent", "caption": "들여쓰기" },
+                    { "command": "unindent", "caption": "내어쓰기" },
+                    { "command": "reindent", "caption": "들여쓰기 최적화", "args": {"single_line": true} },
+                    { "command": "swap_line_up", "caption": "이전 행과 교체" },
+                    { "command": "swap_line_down", "caption": "다음 행과 교체" },
+                    { "command": "duplicate_line", "caption": "행 복제 삽입" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "행제거" },
+                    { "command": "join_lines", "caption": "행 결합" }
+                ]
+            },
+            {
+                "caption": "댓글(m)", "mnemonic": "m",
+                "id": "comment",
+                "children":
+                [
+                    { "command": "toggle_comment", "args": {"block": false}, "caption": "행주석 토글" },
+                    { "command": "toggle_comment", "args": {"block": true}, "caption": "블록주석 토글" }
+                ]
+            },
+            {
+                "caption": "텍스트(T)", "mnemonic": "T",
+                "id": "text",
+                "children":
+                [
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "이전행에 빈행 삽입" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "다음행에 빈행 삽입" },
+                    { "caption": "-" },
+                    { "command": "delete_word", "args": { "forward": true }, "caption": "단어끝까지 삭제" },
+                    { "command": "delete_word", "args": { "forward": false }, "caption": "단어시작부분까지 삭제" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "행삭제" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "행끝까지 삭제" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "글머리까지 삭제" },
+                    { "caption": "-" },
+                    { "command": "transpose", "caption": "문자나 단어를 이동" }
+                ]
+            },
+            {
+                "caption": "XML태그",
+                "id": "tag",
+                "children":
+                [
+                    { "command": "종료태그 삽입" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "태그블룩 선택" },
+                    { "command": "insert_snippet", "args": { "name": "res://Packages/XML/long-tag.sublime-snippet" }, "caption": "선택영역을 새 태그로 랩핑" }
+                ]
+            },
+            {
+                "caption": "마크",
+                "id": "mark",
+                "children":
+                [
+                    { "command": "set_mark", "caption": "마크 설정" },
+                    { "command": "select_to_mark", "caption": "마크까지 선택" },
+                    { "command": "delete_to_mark", "caption": "마크까지 삭제 -> yank버퍼" },
+                    { "command": "swap_with_mark", "caption": "캐럿과 마크를 이동" },
+                    { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "표시 제거" },
+                    { "caption": "-" },
+                    { "command": "yank", "caption": "yank버퍼 추가" }
+                ]
+            },
+            {
+                "caption": "코드 접기",
+                "id": "fold",
+                "children":
+                [
+                    { "command": "fold", "caption": "접기" },
+                    { "command": "unfold", "caption": "펴기" },
+                    { "command": "unfold_all", "caption": "모두 펴기" },
+                    { "caption": "-" },
+                    { "caption": "접기[레벨1]", "command": "fold_by_level", "args": {"level": 1} },
+                    { "caption": "접기[레벨2]", "command": "fold_by_level", "args": {"level": 2} },
+                    { "caption": "접기[레벨3]", "command": "fold_by_level", "args": {"level": 3} },
+                    { "caption": "접기[레벨4]", "command": "fold_by_level", "args": {"level": 4} },
+                    { "caption": "접기[레벨5]", "command": "fold_by_level", "args": {"level": 5} },
+                    { "caption": "접기[레벨6]", "command": "fold_by_level", "args": {"level": 6} },
+                    { "caption": "접기[레벨7]", "command": "fold_by_level", "args": {"level": 7} },
+                    { "caption": "접기[레벨8]", "command": "fold_by_level", "args": {"level": 8} },
+                    { "caption": "접기[레벨9]", "command": "fold_by_level", "args": {"level": 9} },
+                    { "caption": "-" },
+                    { "command": "fold_tag_attributes", "caption": "XML태그속성 접기" }
+                ]
+            },
+            {
+                "caption": "대소문자 변환(a)", "mnemonic": "a",
+                "id": "convert_case",
+                "children":
+                [
+                    { "command": "title_case", "caption": "제목" },
+                    { "command": "upper_case", "caption": "대문자" },
+                    { "command": "lower_case", "caption": "소문자" },
+                    { "command": "swap_case", "caption": "대소문자 반전" }
+                ]
+            },
+            {
+                "caption": "줄바꿈",
+                "id": "wrap",
+                "children":
+                [
+                    { "command": "wrap_lines", "caption": "바로 현재[지정값]" },
+                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "줄바꿈[ 70자]" },
+                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "줄바꿈[ 78자]" },
+                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "줄바꿈[ 80자]" },
+                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "줄바꿈[100자]" },
+                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "줄바꿈[120자]" }
+                ]
+            },
+            { "command": "auto_complete", "caption": "자동완성 표시" },
+            { "caption": "-", "id": "permute" },
+
+
+            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "행정렬(S)", "mnemonic": "S" },
+            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "행정렬[대소문자 구분]" },
+            {
+                "caption": "줄정렬[기타]",
+                "children":
+                [
+                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "순서반전" },
+                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "중복행 제거" },
+                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "순서랜덤" }
+                ]
+            },
+            {
+                "caption": "선택요소정렬",
+                "children":
+                [
+                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "정렬" },
+                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "정렬[대소문자 구분]" },
+                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "수선반전" },
+                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "중복요소제거" },
+                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "순서랜덤" }
+                ]
+            },
+            { "caption": "-", "id": "end" }
+        ]
+    },
+    {
+        "caption": "선택(S)",
+        "mnemonic": "S",
+        "id": "selection",
+        "children":
+        [
+            { "command": "split_selection_into_lines", "caption": "선택영역을 행단위 분할" },
+            { "command": "select_lines", "args": {"forward": false}, "caption": "이전행 캐럿추가" },
+            { "command": "select_lines", "args": {"forward": true}, "caption": "다음행 캐럿추가" },
+            { "command": "single_selection", "caption": "캐럿 선택" },
+            { "command": "invert_selection", "caption": "반전 선택" },
+            { "caption": "-" },
+            { "command": "select_all", "caption": "모두 선택" },
+            { "command": "expand_selection", "args": {"to": "line"}, "caption": "선택영역확장[행단위]" },
+            { "command": "find_under_expand", "caption": "선택영역확장[단어단위]" },
+            { "command": "expand_selection_to_paragraph", "caption": "선택영역확장[단락단위]" },
+            { "command": "expand_selection", "args": {"to": "scope"}, "caption": "선택영역확장[스코프단위]" },
+            { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "선택영역확장[괄호단위]" },
+            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "선택영역확장[들여쓰기단위]" },
+            { "command": "expand_selection", "args": {"to": "tag"}, "caption": "선택영역확장[XML태그단위]" }
+        ]
+    },
+    {
+        "caption": "검색(i)",
+        "mnemonic": "i",
+        "id": "find",
+        "children":
+        [
+            { "command": "show_panel", "args": {"panel": "find"}, "caption": "검색…" },
+            { "command": "find_next","caption": "다음찾기" },
+            { "command": "find_prev", "caption": "이전찾기" },
+            { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "증분검색" },
+            { "caption": "-" },
+            { "command": "show_panel", "args": {"panel": "replace"}, "caption": "바꾸기…" },
+            { "command": "replace_next","caption": "다음 바꾸기" },
+            { "caption": "-" },
+            { "command": "find_under", "caption": "빠른검색" },
+            { "command": "find_all_under", "caption": "빠른 전체검색" },
+            { "command": "find_under_expand", "caption": "빠른 선택범위추가" },
+            { "command": "find_under_expand_skip", "caption": "빠른 선택 스킵", "platform": "!OSX" },
+            { "caption": "-" },
+            { "command": "slurp_find_string", "caption": "선택조건으로 사용" },
+            { "command": "slurp_replace_string", "caption": "대체조건으로 사용" },
+            { "caption": "-" },
+            { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "파일검색…" },
+            {
+                "caption": "검색결과(R)",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "show_panel", "args": {"panel": "output.find_results"}, "caption": "패널보기" },
+                    { "command": "next_result", "caption": "다음 검색결과" },
+                    { "command": "prev_result", "caption": "이전 검색결과" }
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "보기(V)",
+        "mnemonic": "V",
+        "id": "view",
+        "children":
+        [
+            {
+                "caption": "사이드바",
+                "id": "side_bar",
+                "children":
+                [
+                    { "command": "toggle_side_bar", "caption": "보기/숨기기" },
+                    { "caption": "-" },
+                    { "command": "toggle_show_open_files", "caption": "OPEN FILES보기/숨기기" }
+                ]
+            },
+            { "command": "toggle_minimap", "caption": "미니맵" },
+            { "command": "toggle_tabs", "caption": "탭" },
+            { "command": "toggle_status_bar", "caption": "상태표시줄" },
+            { "command": "toggle_menu", "caption": "메뉴바" },
+            { "command": "show_panel", "args": {"panel": "console", "toggle": true} , "caption": "콘솔"},
+            { "caption": "-", "id": "full_screen" },
+            { "command": "toggle_full_screen", "caption": "전체화면" },
+            { "command": "toggle_distraction_free", "caption": "집중모드" },
+            { "caption": "-", "id": "groups" },
+            {
+                "caption": "화면분할(L)",
+                "mnemonic": "L",
+                "id": "layout",
+                "children":
+                [
+                    {
+                        "caption": "분할해제",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1]]
+                        }
+                    },
+                    {
+                        "caption": "2열",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.5, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+                        }
+                    },
+                    {
+                        "caption": "3열",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.33, 0.66, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+                        }
+                    },
+                    {
+                        "caption": "4열",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+                        }
+                    },
+                    {
+                        "caption": "2행",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 0.5, 1.0],
+                            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+                        }
+                    },
+                    {
+                        "caption": "3행",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 0.33, 0.66, 1.0],
+                            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+                        }
+                    },
+                    {
+                        "caption": "4분할",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.5, 1.0],
+                            "rows": [0.0, 0.5, 1.0],
+                            "cells":
+                            [
+                                [0, 0, 1, 1], [1, 0, 2, 1],
+                                [0, 1, 1, 2], [1, 1, 2, 2]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "caption": "분할화면 선택(F)",
+                "children":
+                [
+                    { "command": "new_pane", "caption": "Move File to New Group" },
+                    { "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
+                    { "command": "close_pane", "caption": "Close Group" },
+
+
+                    { "caption": "-" },
+
+
+                    {
+                        "caption": "Max Columns: 1",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 1 }
+                    },
+                    {
+                        "caption": "Max Columns: 2",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 2 }
+                    },
+                    {
+                        "caption": "Max Columns: 3",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 3 }
+                    },
+                    {
+                        "caption": "Max Columns: 4",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 4 }
+                    },
+                    {
+                        "caption": "Max Columns: 5",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 5 }
+                    },
+                ]
+            },
+            {
+                "caption": "포커스 그룹",
+                "mnemonic": "F",
+                "children":
+                [
+
+
+                    { "command": "focus_neighboring_group", "caption": "다음" },
+                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "이전" },
+                    { "caption": "-" },
+                    { "command": "focus_group", "args": {"group": 0}, "caption": "1그룹" },
+                    { "command": "focus_group", "args": {"group": 1}, "caption": "2그룹" },
+                    { "command": "focus_group", "args": {"group": 2}, "caption": "3그룹" },
+                    { "command": "focus_group", "args": {"group": 3}, "caption": "4그룹" }
+                ]
+            },
+            {
+                "caption": "분할화면으로 파일이동(M)",
+                "mnemonic": "M",
+                "children":
+                [
+                    { "command": "move_to_neighboring_group", "caption": "다음" },
+                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "이전" },
+                    { "caption": "-" },
+                    { "command": "move_to_group", "args": {"group": 0}, "caption": "1그룹" },
+                    { "command": "move_to_group", "args": {"group": 1}, "caption": "2그룹" },
+                    { "command": "move_to_group", "args": {"group": 2}, "caption": "3그룹" },
+                    { "command": "move_to_group", "args": {"group": 3}, "caption": "4그룹" }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "caption": "구문(S)",
+                "mnemonic": "S",
+                "id": "syntax",
+                "children": [ { "command": "$file_types" } ]
+            },
+            {
+                "caption": "들여쓰기(I)",
+                "mnemonic": "I",
+                "id": "indentation",
+                "children":
+                [
+                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "빈칸 사용", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "들여쓰기[1]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "들여쓰기[2]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "들여쓰기[3]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "들여쓰기[4]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "들여쓰기[5]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "들여쓰기[6]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "들여쓰기[7]", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "들여쓰기[8]", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "detect_indentation", "caption": "파일에서 찾기" },
+                    { "caption": "-" },
+                    { "command": "expand_tabs", "caption": "들여쓰기 빈칸으로 변환", "args": {"set_translate_tabs": true} },
+                    { "command": "unexpand_tabs", "caption": "들여쓰기 탭으로 변환", "args": {"set_translate_tabs": true} }
+                ]
+            },
+            {
+                "caption": "줄바꿈코드(n)",
+                "mnemonic": "n",
+                "id": "line_endings",
+                "children":
+                [
+                    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows[CRLF]", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix[LF]", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9[CR]", "checkbox": true }
+                ]
+            },
+            { "caption": "-", "id": "settings" },
+            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "줄바꿈(w)", "mnemonic": "w", "checkbox": true },
+            {
+                "caption": "줄바꿈너비",
+                "children":
+                [
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "자동", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120자", "checkbox": true }
+                ]
+            },
+            {
+                "caption": "규칙",
+                "children":
+                [
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "없음", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100자", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120자", "checkbox": true }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "철자검사 토글", "checkbox": true },
+            { "command": "next_misspelling", "caption": "다음맞춤법검사결과" },
+            { "command": "prev_misspelling", "caption": "이전맞춤법검사결과" },
+            {
+                "caption": "맞춤법사전",
+                "children": [ { "command": "$dictionaries" } ]
+            }
+        ]
+    },
+    {
+        "caption": "이동(G)",
+        "mnemonic": "G",
+        "id": "goto",
+        "children":
+        [
+            { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "이동[일반](A)…", "mnemonic": "A" },
+            { "caption": "-" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "이동[기호]…" },
+            { "command": "goto_symbol_in_project", "caption": "Goto Symbol in Project…" },
+            { "command": "goto_definition", "caption": "Goto Definition…" },
+            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "이동[행번호]…" },
+            { "caption": "-" },
+            { "command": "jump_back", "caption": "Jump Back" },
+            { "command": "jump_forward", "caption": "Jump Forward" },
+            { "caption": "-" },
+            {
+                "caption": "파일이동(t)",
+                "mnemonic": "t",
+                "id": "switch_file",
+                "children":
+                [
+                    { "command": "next_view", "caption": "다음파일" },
+                    { "command": "prev_view", "caption": "이전파일" },
+                    { "caption": "-" },
+                    { "command": "next_view_in_stack", "caption": "스택의 다음파일" },
+                    { "command": "prev_view_in_stack", "caption": "스택의 이전파일" },
+                    { "caption": "-" },
+                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "ヘッダ/実装ファイル(H)", "mnemonic": "H" },
+                    { "caption": "-" },
+                    { "command": "select_by_index", "args": { "index": 0 }, "caption": "탭1" },
+                    { "command": "select_by_index", "args": { "index": 1 }, "caption": "탭2" },
+                    { "command": "select_by_index", "args": { "index": 2 }, "caption": "탭3" },
+                    { "command": "select_by_index", "args": { "index": 3 }, "caption": "탭4" },
+                    { "command": "select_by_index", "args": { "index": 4 }, "caption": "탭5" },
+                    { "command": "select_by_index", "args": { "index": 5 }, "caption": "탭6" },
+                    { "command": "select_by_index", "args": { "index": 6 }, "caption": "탭7" },
+                    { "command": "select_by_index", "args": { "index": 7 }, "caption": "탭8" },
+                    { "command": "select_by_index", "args": { "index": 8 }, "caption": "탭9" },
+                    { "command": "select_by_index", "args": { "index": 9 }, "caption": "탭10" }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "caption": "스크롤(S)",
+                "mnemonic": "S",
+                "id": "scroll",
+                "children":
+                [
+                    { "command": "show_at_center", "caption": "선택영을 화면가운데로" },
+                    { "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "한행 위로" },
+                    { "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "한행 아래로" }
+                ]
+            },
+            {
+                "caption": "책갈피(b)",
+                "mnemonic": "b",
+                "id": "bookmarks",
+                "children":
+                [
+                    { "command": "toggle_bookmark", "caption": "설정/해제" },
+                    { "command": "next_bookmark", "caption": "다음 책갈피" },
+                    { "command": "prev_bookmark", "caption": "이전 책갈피" },
+                    { "command": "clear_bookmarks", "caption": "모두 해제" },
+                    { "command": "select_all_bookmarks", "caption": "모두 선택" },
+                    { "caption": "-" },
+                    { "command": "select_bookmark", "args": {"index": 0}, "caption": "책갈피1" },
+                    { "command": "select_bookmark", "args": {"index": 1}, "caption": "책갈피2" },
+                    { "command": "select_bookmark", "args": {"index": 2}, "caption": "책갈피3" },
+                    { "command": "select_bookmark", "args": {"index": 3}, "caption": "책갈피4" },
+                    { "command": "select_bookmark", "args": {"index": 4}, "caption": "책갈피5" },
+                    { "command": "select_bookmark", "args": {"index": 5}, "caption": "책갈피6" },
+                    { "command": "select_bookmark", "args": {"index": 6}, "caption": "책갈피7" },
+                    { "command": "select_bookmark", "args": {"index": 7}, "caption": "책갈피8" },
+                    { "command": "select_bookmark", "args": {"index": 8}, "caption": "책갈피9" },
+                    { "command": "select_bookmark", "args": {"index": 9}, "caption": "책갈피10" },
+                    { "command": "select_bookmark", "args": {"index": 10}, "caption": "책갈피11" },
+                    { "command": "select_bookmark", "args": {"index": 11}, "caption": "책갈피12" },
+                    { "command": "select_bookmark", "args": {"index": 12}, "caption": "책갈피13" },
+                    { "command": "select_bookmark", "args": {"index": 13}, "caption": "책갈피14" },
+                    { "command": "select_bookmark", "args": {"index": 14}, "caption": "책갈피15" },
+                    { "command": "select_bookmark", "args": {"index": 15}, "caption": "책갈피16" }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "move_to", "args": {"to": "brackets"}, "caption": "괄호 맞춤" }
+        ]
+    },
+    {
+        "caption": "도구(T)",
+        "mnemonic": "T",
+        "id": "tools",
+        "children":
+        [
+            { "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "명령 팔레트…" },
+            { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "조각…" },
+            { "caption": "-", "id": "Build" },
+            {
+                "caption": "빌드(u)",
+                "mnemonic": "u",
+                "children":
+                [
+                    { "command": "set_build_system", "args": { "file": "" }, "caption": "자동", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+                    { "command": "$build_systems" },
+                    { "caption": "-" },
+                    { "command": "new_build_system", "caption": "빌드시스템 추가…" }
+                ]
+            },
+            { "command": "build", "mnemonic": "B", "caption": "빌드(B)" },
+            { "command": "build", "args": {"variant": "Run"}, "mnemonic": "R", "caption": "빌드하고 실행(R)" },
+            { "command": "exec", "args": {"kill": true}, "caption": "빌드취소(C)", "mnemonic": "C" },
+            {
+                "caption": "빌드결과(R)",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "패널표시(S)", "mnemonic": "S" },                
+                    { "command": "next_result", "caption": "다음 결과(N)", "mnemonic": "N" },
+                    { "command": "prev_result", "caption": "이전 결과(P)", "mnemonic": "P" }
+                ]
+            },
+            { "command": "toggle_save_all_on_build", "caption": "저장하고 빌드(A)", "mnemonic": "A", "checkbox": true },
+            { "caption": "-", "id": "macros" },
+            { "command": "toggle_record_macro", "caption": "매크로 기록시작/중지(M)", "mnemonic": "M" },
+            { "command": "run_macro", "caption": "매크로실행(P)", "mnemonic": "P" },
+            { "command": "save_macro", "caption": "매크로저장(v)…", "mnemonic": "v" },
+            {
+                "caption": "매크로",
+                "children": [ { "command": "$macros" } ]
+            },
+            { "caption": "-" },
+            { "command": "new_plugin", "caption": "새 플러그인…" },
+            { "command": "new_snippet", "caption": "새 조각…" },
+            { "caption": "-", "id": "end" }
+        ]
+    },
+    {
+        "caption": "프로젝트(P)",
+        "id": "project",
+        "mnemonic": "P",
+        "children":
+        [
+            { "command": "prompt_open_project", "caption": "프로젝트 열기(O)…", "mnemonic": "O" },
+            { "command": "prompt_switch_project_or_workspace", "caption": "Switch Project…" },
+            { "command": "prompt_select_workspace", "caption": "Quick Switch Project…", "mnemonic": "S" },
+            {
+                "caption": "최근 열었던 프로젝트(R)",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "open_recent_project", "args": {"index": 0 } },
+                    { "command": "open_recent_project", "args": {"index": 1 } },
+                    { "command": "open_recent_project", "args": {"index": 2 } },
+                    { "command": "open_recent_project", "args": {"index": 3 } },
+                    { "command": "open_recent_project", "args": {"index": 4 } },
+                    { "command": "open_recent_project", "args": {"index": 5 } },
+                    { "command": "open_recent_project", "args": {"index": 6 } },
+                    { "command": "open_recent_project", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "clear_recent_projects", "caption": "지우기" }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "save_project_as", "caption": "다른 이름으로 프로젝트저장(A)…", "mnemonic": "A" },
+            { "command": "close_workspace", "caption": "Close Project", "mnemonic": "C" },
+            { "command": "open_file", "args": {"file": "${project}"}, "caption": "プロジェクト設定" },
+            { "caption": "-" },
+            { "command": "new_window_for_project", "caption": "New Workspace for Project" },
+            { "command": "save_workspace_as", "caption": "Save Workspace As…", "mnemonic": "A" },
+            { "caption": "-" },
+            { "command": "prompt_add_folder", "caption": "프로젝트에 폴더추가(d)…", "mnemonic": "d" },
+            { "command": "close_folder_list", "caption": "프로젝트의 모든 폴더삭제(m)", "mnemonic": "m" },
+            { "command": "refresh_folder_list", "caption": "폴더를 다시로드(e)", "mnemonic": "e" },
+        ]
+    },
+    {
+        "caption": "기본설정(n)",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Packages폴더(B)…", "mnemonic": "B" },
+            { "caption": "-" },
+            { "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"}, "caption": "기본설정 – 표준" },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/User/Preferences.sublime-settings",
+                    "contents": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by file type specific settings.\n{\n\t$0\n}\n"
+                },
+                "caption": "기본설정 – 사용자"
+            },
+            {
+                "caption": "기본설정 – 확장",
+                "children":
+                [
+                    { "command": "open_file_settings", "caption": "구문지정 – 사용자" },
+                    {
+                        "command": "open_file", "args":
+                        {
+                            "file": "${packages}/User/Distraction Free.sublime-settings",
+                            "contents": "{\n\t$0\n}\n"
+                        },
+                        "caption": "집중모드 – 사용자"
+                    }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/Default/Default ($platform).sublime-keymap"
+                },
+                "caption": "키 바인딩 – 표준"
+            },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/User/Default ($platform).sublime-keymap",
+                    "contents": "[\n\t$0\n]\n"
+                },
+                "caption": "키 바인딩 – 사용자"
+            },
+            { "caption": "-" },
+            {
+                "caption": "글꼴",
+                "children":
+                [
+                    { "command": "increase_font_size", "caption": "확대" },
+                    { "command": "decrease_font_size", "caption": "축소" },
+                    { "caption": "-" },
+                    { "command": "reset_font_size", "caption": "재설정" }
+                ]
+            },
+            {
+                "caption": "색상구성표",
+                "children": [ { "command": "$color_schemes" } ]
+            }
+        ]
+    },
+    {
+        "caption": "도움말(H)",
+        "mnemonic": "H",
+        "id": "help",
+        "children":
+        [
+            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "문서" },
+            { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
+            { "caption": "-" },
+            { "command": "purchase_license", "caption": "라이선스구매"},
+            { "command": "show_license_window", "caption": "등록" },
+            { "command": "remove_license", "caption": "라이선스제거"},
+            { "caption": "-" },
+            { "command": "update_check", "caption": "업데이트 확인…", "platform": "!Linux" },
+            { "command": "show_about_window", "caption": "Sublime Text에 대해(A)", "mnemonic": "A" }
+        ]
+    }
+]
