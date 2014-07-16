@@ -1,0 +1,8 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "닫기" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "다른 닫기" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "오른쪽 모두 닫기" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "새로 만들기" },
+	{ "command": "prompt_open_file", "caption": "파일열기" }
+]
