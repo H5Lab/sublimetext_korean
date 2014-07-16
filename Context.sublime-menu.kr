@@ -1,0 +1,13 @@
+[
+    { "command": "copy", "caption": "복사" },
+    { "command": "cut", "caption": "잘라내기" },
+    { "command": "paste", "caption": "붙여넣기" },
+    { "caption": "-", "id": "selection" },
+    { "command": "select_all", "caption": "모두선택" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_in_browser", "caption": "브라우저로 열기" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "파일로 열기" },
+    { "command": "copy_path", "caption": "전체경로복사" },
+    { "command": "reveal_in_side_bar", "caption": "사이드바 및 동기화" },
+    { "caption": "-", "id": "end" }
+]
