@@ -1,7 +1,7 @@
 Korean menu for Sublime Text 3
 ===============================
 
-Sublime Text3의 한국어 플러그인입니다.
+Sublime Text3의 한글 메뉴 패치입니다.
 
 제작자: Myoungjun, Kim (myoungjun.kim@gmail.com)
 
